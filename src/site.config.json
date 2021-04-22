@@ -1,6 +1,7 @@
 {
   "title": "Gatsby Linaria Starter",
   "description": "Starting out with Gatsby and Linaria",
+  "author": "Spencer Evison",
   "baseurl": "https://www.gatsbylinaria.com/",
   "ogimage": "",
   "nav": [

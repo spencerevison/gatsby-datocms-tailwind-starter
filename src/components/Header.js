@@ -1,5 +1,5 @@
 import React from "react";
-import HamburgerMenu from "./Nav/NavMobile";
+import HamburgerMenu from "./HamburgerMenu";
 import { Popover } from "@headlessui/react";
 import { Link } from "gatsby";
 import site from "../site.config.json";
@@ -15,7 +15,7 @@ export default function Header() {
           <>
             <div className="flex items-center justify-between md:justify-start md:space-x-10">
               <div className="flex justify-start lg:flex-1 lg:w-0">
-                <Link to="/" className="h-6 sm:h-8 md:h-10">
+                <Link to="/" className="h-7 sm:h-8 md:h-10">
                   <span className="sr-only">{site.title}</span>
                   <Logo className="w-auto h-full" />
                 </Link>
@@ -31,7 +31,7 @@ export default function Header() {
                   <Link
                     key={item.title}
                     to={item.path}
-                    className="text-gray-500 hover:text-gray-900 text-base font-medium"
+                    className="text-gray-500 text-base font-medium"
                   >
                     {item.title}
                   </Link>

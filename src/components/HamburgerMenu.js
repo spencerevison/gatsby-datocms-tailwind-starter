@@ -4,7 +4,7 @@ import { XIcon } from "@heroicons/react/outline";
 import { Link } from "gatsby";
 import Logo from "svg/logo.svg";
 import site from "site.config.json";
-import ButtonLink from "../ButtonLink";
+import ButtonLink from "./ButtonLink";
 
 export default function HamburgerMenu({ open }) {
   return (
@@ -44,7 +44,7 @@ export default function HamburgerMenu({ open }) {
                 <Link
                   key={item.title}
                   to={item.path}
-                  className="hover:text-gray-700 text-gray-900 text-base font-medium"
+                  className="text-gray-900 text-base font-medium"
                 >
                   {item.title}
                 </Link>

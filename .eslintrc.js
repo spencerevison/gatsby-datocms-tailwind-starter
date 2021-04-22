@@ -3,7 +3,7 @@ module.exports = {
     __PATH_PREFIX__: true,
   },
   extends: ["react-app", "prettier", "plugin:prettier/recommended"],
-  plugins: ["react", "unused-imports", "prettier"],
+  plugins: ["react", "prettier"],
   rules: {
     "react/jsx-filename-extension": 0,
     "react/jsx-props-no-spreading": 0,
@@ -23,6 +23,5 @@ module.exports = {
     "no-multiple-empty-lines": 0,
     "import/no-anonymous-default-export": 0,
     "no-ignore": 0,
-    "unused-imports/no-unused-imports": 1,
   },
 };
