@@ -1,0 +1,17 @@
+body {
+  @apply text-black;
+  @apply bg-white;
+}
+
+a {
+  @apply text-primary;
+  @apply hover:text-primary-dark;
+  @apply focus:border-primary;
+  transition: all 150ms ease-out;
+}
+
+strong, b {
+  @apply font-extrabold;
+}
+
+

@@ -1,0 +1,24 @@
+{
+  "title": "Gatsby Linaria Starter",
+  "description": "Starting out with Gatsby and Linaria",
+  "baseurl": "https://www.gatsbylinaria.com/",
+  "ogimage": "",
+  "nav": [
+    {
+      "title": "Home",
+      "path": "/"
+    },
+    {
+      "title": "About",
+      "path": "/about"
+    },
+    {
+      "title": "Get In Touch",
+      "path": "/contact"
+    }
+  ],
+  "cta": {
+    "title": "Call To Action",
+    "path": "#"
+  }
+}
