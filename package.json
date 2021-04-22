@@ -13,7 +13,10 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "perf": "lighthouse https://projectname.netlify.app/ --budget-path=./budget.json"
+    "perf": "lighthouse https://projectname.netlify.app/ --budget-path=./budget.json",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build-all": "gatsby build && build-storybook"
   },
   "dependencies": {
     "@headlessui/react": "^1.0.0",
@@ -40,9 +43,18 @@
     "tailwindcss": "^2.1.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@storybook/addon-a11y": "^6.2.8",
+    "@storybook/addon-actions": "^6.2.8",
+    "@storybook/addon-essentials": "^6.2.8",
+    "@storybook/addon-links": "^6.2.8",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/react": "^6.2.8",
+    "@svgr/webpack": "^5.5.0",
     "autoprefixer": "^10.2.5",
     "babel": "^6.23.0",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
     "eslint": "^7.24.0",
     "eslint-config-prettier": "^8.2.0",
     "eslint-config-react-app": "^6.0.0",

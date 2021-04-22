@@ -11,7 +11,6 @@ const colors = {
 };
 
 module.exports = {
-  mode: "jit",
   purge: ["./src/**/*.js", "./public/page-data/**/*.json"],
   darkMode: false, // or 'media' or 'class'
   theme: {

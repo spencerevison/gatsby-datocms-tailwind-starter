@@ -1,8 +1,8 @@
 {
-  "title": "Gatsby Linaria Starter",
-  "description": "Starting out with Gatsby and Linaria",
+  "title": "Gatsby Tailwind Starter",
+  "description": "Starting out with Gatsby and Tailwind",
   "author": "Spencer Evison",
-  "baseurl": "https://www.gatsbylinaria.com/",
+  "baseurl": "https://www.<site-url>.com/",
   "ogimage": "",
   "nav": [
     {
