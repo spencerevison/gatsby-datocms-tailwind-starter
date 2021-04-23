@@ -60,6 +60,9 @@ module.exports = {
           "2xl": "6rem",
         },
       },
+      gridTemplateRows: {
+        layout: "auto 1fr auto;",
+      },
     },
   },
   variants: {
