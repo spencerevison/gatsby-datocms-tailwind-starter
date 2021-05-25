@@ -1,12 +1,19 @@
 import React from "react";
 import Layout from "components/Layout";
-import Img from "gatsby-image";
+import SEO from "../components/SEO";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
+import site from "../site.config.json";
 
 const IndexPage = ({ data: { page } }) => {
   return (
-    <Layout pageTitle="Home">
-      <Img className="w-full" alt="" fluid={page.heroImage.fluid} />
+    <Layout>
+      <SEO titleTemplate={site.title} />
+      <GatsbyImage
+        className="w-full"
+        alt=""
+        image={page.heroImage.gatsbyImageData}
+      />
     </Layout>
   );
 };
@@ -17,9 +24,14 @@ export const query = graphql`
   query IndexQuery {
     page: datoCmsHomePage {
       heroImage {
-        fluid(maxWidth: 1180) {
-          ...GatsbyDatoCmsFluid_tracedSVG
-        }
+        gatsbyImageData(
+          placeholder: BLURRED
+          imgixParams: {
+            duotone: "88363B,F1E4FF"
+            duotoneAlpha: 60
+            fit: "crop"
+          }
+        )
       }
       heroTagline
       heroSubText

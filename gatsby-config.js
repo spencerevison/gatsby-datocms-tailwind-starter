@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Tailwind Starter",
-    siteUrl: "https://www.gatsbytailwind.com",
+    defaultTitle: "Gatsby Starter",
+    defaultTitleTemplate: "%s | Gatsby Starter",
+    defaultDescription: "",
+    siteUrl: "https://www.site-url.com",
+    defaultImage: "/images/social.jpg",
   },
   plugins: [
     "gatsby-plugin-sitemap",

@@ -1,16 +1,10 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import site from "site.config.json";
 import Header from "./Header";
 import Footer from "./Footer";
 
-export default function Layout({ children, pageTitle }) {
+export default function Layout({ children }) {
   return (
-    <div className="grid-rows-layout grid min-h-screen">
-      <Helmet htmlAttributes={{ lang: "en" }}>
-        <title>{`${pageTitle} | ${site.title}`}</title>
-        <meta name="description" content={site.description} />
-      </Helmet>
+    <div className="min-h-screen grid grid-rows-layout">
       <Header />
       <main>{children}</main>
       <Footer />
