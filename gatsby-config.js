@@ -7,6 +7,7 @@ module.exports = {
     defaultImage: "/images/social.jpg",
   },
   plugins: [
+    "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
