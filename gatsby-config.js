@@ -11,7 +11,6 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
-    "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
     "gatsby-plugin-postcss",
     {
@@ -41,10 +40,16 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-google-fonts",
+      resolve: "gatsby-plugin-webfonts",
       options: {
-        fonts: ["Manrope:200,400,600,800"],
-        display: "swap",
+        fonts: {
+          google: [
+            {
+              family: "Manrope",
+              variants: ["300", "400", "600", "800"],
+            },
+          ],
+        },
       },
     },
   ],
